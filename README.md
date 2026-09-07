@@ -27,4 +27,3 @@ Bascule · zpoline · seL4 · Library OS
 読書中：『BSDカーネルの設計と実装 改訂第2版』
 
 ---
-# kamedaga

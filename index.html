@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kamery's house</title>
+</head>
+<body>
+  <div style="display: flex;">
+    <img src="19913.jpg" height="100px" style="border-top-left-radius: 20%;border-bottom-left-radius: 20%;">
+    <img src="aaa.png" height="100px">
+    <h1 style="margin-left: 15px;">kameryのプロフ(kamery's house)</h1>
+  </div>
+  <hr>
+  <h1>自己紹介</h1>
+  <h4>kameryです</h4>
+  <p>c/cpp/zig/go/js/python/rust</p>
+  <p>半年ぐらいRustやったけど結局脳に入らなくてやめちゃった またリベンジする機会があれば</p>
+  <p>python pytorchとかfastapiとかflaskとかいろいろやってた </p>
+  <p>c 汚コード書きます</p>
+  <p>cpp たまに使うがクラス設計わからん 黒魔術もわからない</p>
+  <h4>興味があるもの(英語教えて)</h4>
+  <p>Composing OS extensions safely and efficiently with Bascule</p>
+  <p>zpoline: a system call hook mechanism based on binary rewriting</p>
+  <p>seL4: formal verification of an OS kernel</p>
+  <p>Rethinking the library OS from the top down</p>
+  <a href="https://atcoder.jp/users/kamerty">やる気のないatcoder</a>
+  <h4>読んでる本</h4>
+  <p>BSDカーネルの設計都実装改訂2版</p>
+  <section id="sakuhinn">
+    <h2>作ったもの(随時更新)</h2>
+    <div style="border: 2px solid #333;">
+      <h3>Pineチャット</h3>
+      <p>パスワードを平文で保存したり、apiを叩けば非公開のチャットが見れたり、ログインをバイパスする抜け道もあったが、そろそろ2年目になるチャットアプリ</p>
+
+      <img src="pinepine.png" />
+    </div>
+    <div style="border: 2px solid #333;">
+      <h3>PachaOS</h3>
+      <p>最近ずっと作ってる自作OS 名前にそこまで意味はない</p>
+      <p>カーネルはfd-based microkernelというマイクロカーネルを名乗ってて、Untyped memory&CNodeベースのマイクロカーネルに比べてPOSIXと親和性が高いところとcapability的なアクセス権限の両立をしているのが特徴</p>
+      <p>しかもなぜかカーネルはZig製 x86_64のみ対応</p>
+      <p>過酷なやり方でext4移植したけど、意外と動いてくれてます</p>
+      <p>互換レイヤーで勝つ</p>
+      <img src="os.png" width="40%" />
+      <p>↑xfce4-terminelでfastfetchを見せつけながらthunarとglxgearsを動かし、libreoffice writerが起動してる途中の写真</p>
+    </div>
+    <div style="border: 2px solid #333;">
+      <h3>Kobox2</h3>
+      <p>LKLに似たカーネルの最下層をポートするアプローチを使ってLinuxのドライバをユーザー空間で動かすプロジェクト</p>
+      <p>ビルトインカーネルをさらに細分化し部品ごとに共有ライブラリとしてリンクすることで、バイナリサイズを小さくしている</p>
+      <p>Linuxは分離されたsandboxプロセスとして動くためGPLライセンスを回避していたりSMPが有効になったりしていて、面白い</p>
+      <p>kobox1は割愛</p>
+    </div>
+  </section>
+  <button onclick="openbotu()" style="padding: 10px; color: #ff0000;">作ったもの(没)</button>
+  <section id="botu">
+    <h3>作ったもの(没作品)</h3>
+    <p>随時更新</p>
+    <div style="border: 2px solid #333;">
+      <h2>pine-loader</h2>
+      <p>Minecraft統合版向けのランチャー</p><p>バージョンを変えたり、dllをインジェクションしたりできる Modローダーではない</p>
+      <div style="display: flex;"></div><img src="pine.png" width="50%"/>
+      <img src="cube.png"/><p>深度バッファーを取得して立方体を描画したけどおかしくなったやつ ここであきらめ <br><s>LeviLaminaのdllをリバースエンジニアリングして作った</s></p></div> </div>
+    
+    <div style="border: 2px solid #333;">
+      <h2>Real〇rainMod互換mod</h2>
+      <p>小学生のころやっていたことを思い出し、codexで作っていたが、なんとほぼできてきたタイミングで全く同じものを公開してバズってる人が別にいたため、没に(早めに公開しようという教訓)</p>
+      <img src="java.png" width="40%"/>
+    </div>
+  </section>
+  <script>
+    const botu = document.getElementById('botu');
+    botu.style = "display: none;";
+
+
+    function openbotu() {
+      botu.style = "display: block;"
+    }
+
+  </script>
+</body>
+</html>
